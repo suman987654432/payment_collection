@@ -5,6 +5,6 @@ const isLocalhost = window.location.hostname === 'localhost' ||
 
 const API_URL = isLocalhost
     ? 'http://localhost:5000/api/users'
-    : 'https://backend-payment-b6h8.onrender.com/api/users';
+    : 'https://payment-collection-uvnc.onrender.com/api/users';
 
 export default API_URL;
