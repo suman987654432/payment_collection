@@ -273,8 +273,8 @@ const AdminDashboard = ({ onLogout }) => {
 
             {/* Details Modal (Popup) */}
             {selectedUser && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-all duration-300">
-                    <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl relative animate-in zoom-in duration-300 flex flex-col">
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+                    <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col">
                         <div className="sticky top-0 bg-white border-b border-slate-100 p-6 flex justify-between items-center z-20">
                             <h2 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
                                 Applicant Details
@@ -315,11 +315,11 @@ const ImageSection = ({ title, url }) => (
         <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 flex items-center gap-2">
             <Download size={14} className="text-purple-500" /> {title}
         </h3>
-        <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-50 group relative mb-4">
+        <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-50 relative mb-4">
             <img
                 src={url}
                 alt={title}
-                className="w-full h-auto object-contain max-h-[500px] transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-auto object-contain"
             />
         </div>
         <a
